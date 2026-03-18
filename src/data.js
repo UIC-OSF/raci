@@ -136,7 +136,7 @@ export const areas = [
         accountableRegularity: 'Weekly (Mon and Fri)',
         meetingRegularity: 'Monthly (3rd Wed)',
         informedRegularity: 'Monthly (2nd Mon)',
-        effectiveDate: 'TBD',
+        effectiveDate: 'March 18, 2026',
         r: ['ck', 'brother_j'],
         a: ['chris'],
         c: ['blake'],
@@ -300,7 +300,7 @@ graph TD
         area: 'user_testing_extension',
         responsible: 'ck',
         accountable: 'chris',
-        effectiveDate: 'TBD',
+        effectiveDate: 'March 18, 2026',
         reviewCadence: 'Weekly (Tue and Thu)',
         reportRegularity: 'Monthly (2nd Mon)',
         content: `
@@ -365,6 +365,7 @@ graph TD
     <li><strong>Information Sharing:</strong> Research how screen readers can communicate directly with the extension to share information that contextualizes a11y bugs and enhances reporting.</li>
     <li><strong>NVDA Integration:</strong> Explore the feasibility of building an NVDA add-on to relay information to the extension.</li>
     <li><strong>JAWS Integration:</strong> Explore the creation of JAWS scripts for data relay.</li>
+    <li><strong>VoiceOver Integration:</strong> Investigate potential integration capabilities and data relay workflows for macOS VoiceOver.</li>
     <li><strong>Advanced Tracking:</strong> Investigate if these advanced integrations can effectively capture user interaction data that is otherwise not exposed through conventional browser APIs.</li>
     <li><strong>Continuous Equalify Integration:</strong> Route all advanced screen reader diagnostics directly back to the Equalify auditing platform to provide unprecedented context for a11y issues.</li>
 </ul>
