@@ -50,10 +50,10 @@ export const areas = [
         i: ['gemma']
     },
     {
-        id: 'hub_development',
-        label: 'Hub',
+        id: 'documentation',
+        label: 'Equalify Documentation',
         project: 'equalify',
-        objective: 'Develop, maintain, and innovate the core Equalify Hub platform to serve as the central accessibility management system.',
+        objective: 'Develop, maintain, and innovate the Equalify Documentation to serve as the central accessibility management system.',
         meetingRegularity: 'Monthly (2nd Tue)',
         informedRegularity: 'On updates',
         effectiveDate: 'TBD',
@@ -76,8 +76,8 @@ export const areas = [
         i: ['chris', 'trey', 'ck', 'amanda', 'new_support_hire']
     },
     {
-        id: 'dashboard_development',
-        label: 'Dashboard Development',
+        id: 'dashboard_product',
+        label: 'Dashboard Product',
         project: 'equalify',
         objective: 'Design and implement interactive, data-driven dashboards for visualizing complex accessibility metrics and trends.',
         meetingRegularity: 'Monthly (1st Thu)',
@@ -89,17 +89,17 @@ export const areas = [
         i: ['ck', 'new_support_hire', 'gemma', 'amanda']
     },
     {
-        id: 'equalify_wp_plugin',
-        label: 'Dashboard WP Plugin',
+        id: 'open_source_community_management',
+        label: 'Equalify Open Source Community Management',
         project: 'equalify',
-        objective: 'Maintain and update the Equalify Dashboard WordPress Plugin.',
-        meetingRegularity: 'Monthly (1st Thu)',
+        objective: 'Foster collaboration and engagement within the open source community.',
+        meetingRegularity: 'TBD',
         informedRegularity: 'On updates',
         effectiveDate: 'TBD',
-        r: ['trey'],
+        r: [],
         a: ['blake'],
-        c: ['chris'],
-        i: ['ck', 'new_support_hire', 'gemma', 'amanda']
+        c: [],
+        i: []
     },
     {
         id: 'accessibility',
