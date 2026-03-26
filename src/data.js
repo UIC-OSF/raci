@@ -447,5 +447,75 @@ graph TD
 <h3>2. Process</h3>
 <p>Stefin will run a weekly meeting with the DAS/OSF team to coordinate open sourcing and releasing Equalify according to the timeline at <a href="https://it.uic.edu/accessibility/uic-equalify/#timeline" target="_blank">https://it.uic.edu/accessibility/uic-equalify/#timeline</a>.</p>
         `
+    },
+    {
+        id: 'sop_hub_issue_triage',
+        title: 'Equalify Hub Issue Triage',
+        project: 'equalify',
+        area: 'open_source_community_management',
+        responsible: 'chris',
+        accountable: 'blake',
+        effectiveDate: 'March 26, 2026',
+        reviewCadence: 'Quarterly',
+        reportRegularity: 'On Updates',
+        content: `
+<h3>1. Purpose</h3>
+<p>This document defines how incoming issues on <a href="https://github.com/EqualifyEverything/equalify-hub">EqualifyEverything/equalify-hub</a> are triaged, labeled, prioritized, and routed. The goal is to ensure every issue gets a timely, consistent response and lands on the right person's plate.</p>
+<h3>2. Triage Cadence & Communication</h3>
+<h4>2.1. Triage Sessions</h4>
+<ul>
+    <li><strong>Frequency:</strong> Monthly</li>
+    <li><strong>Participants:</strong> Chris, Trey (optional)</li>
+    <li><strong>Objective:</strong> Review all new/unlabeled issues, apply labels, set priority.</li>
+</ul>
+<h4>2.2. Asynchronous Monitoring</h4>
+<ul>
+    <li>Team members should monitor the hub repo for new issues between triage sessions and flag anything urgent.</li>
+</ul>
+<h3>3. Triage Process</h3>
+<p>Each new issue should be walked through the following steps:</p>
+<h4>Step 1: Initial Screening</h4>
+<ul>
+    <li><strong>Is it a duplicate?</strong> Search existing open issues. If yes, label <code>duplicate</code>, link to the original, and close.</li>
+    <li><strong>Is it valid?</strong> If the issue is spam, off-topic, or not actionable, label <code>invalid</code> and close with a brief explanation.</li>
+    <li><strong>Is it a question?</strong> If the reporter needs help rather than reporting a defect or request, label <code>question</code> and respond or redirect.</li>
+</ul>
+<h4>Step 2: Categorize</h4>
+<p>Apply exactly one primary label:</p>
+<table>
+    <thead><tr><th>Label</th><th>When to apply</th></tr></thead>
+    <tbody>
+        <tr><td><code>bug</code></td><td>Something is broken or behaving incorrectly</td></tr>
+        <tr><td><code>feature</code></td><td>A new feature or improvement request</td></tr>
+        <tr><td><code>documentation</code></td><td>Missing or incorrect docs</td></tr>
+    </tbody>
+</table>
+<h4>Step 3: Prioritize</h4>
+<table>
+    <thead><tr><th>Priority</th><th>Criteria</th><th>Target Response</th></tr></thead>
+    <tbody>
+        <tr><td><strong>Critical</strong></td><td>Service down, data loss, security vulnerability</td><td>Same day</td></tr>
+        <tr><td><strong>High</strong></td><td>Major feature broken, blocking users</td><td>Within 2 days</td></tr>
+        <tr><td><strong>Medium</strong></td><td>Non-blocking bug or important feature</td><td>Within 1 week</td></tr>
+        <tr><td><strong>Low</strong></td><td>Minor cosmetic issue, nice-to-have feature</td><td>Backlog</td></tr>
+    </tbody>
+</table>
+<h4>Step 4: Assign & Route</h4>
+<ul>
+    <li>Assign an owner based on the area of the codebase affected (in this case, Chris, but can extend to future maintainers).</li>
+    <li>If the issue requires input from someone outside the team, tag them.</li>
+</ul>
+<h4>Step 5: Respond</h4>
+<ul>
+    <li>Every triaged issue should receive an acknowledgment comment within the target response window, even if it's just: <em>"Triaged — labeled as [X], targeting [timeframe]."</em></li>
+</ul>
+<h3>4. Escalation</h3>
+<ul>
+    <li><strong>Critical issues</strong> should be communicated immediately via the team's primary async channel (Teams) in addition to the GitHub issue.</li>
+    <li>If an issue is unresolved past its target response window, escalate in the next triage session.</li>
+</ul>
+<h3>5. Document Maintenance</h3>
+<p>This SOP should be reviewed quarterly or when the team/process changes significantly.</p>
+        `
     }
 ];
