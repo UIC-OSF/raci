@@ -80,13 +80,13 @@ export const areas = [
         label: 'Dashboard Product',
         project: 'equalify',
         objective: 'Design and implement interactive, data-driven dashboards for visualizing complex accessibility metrics and trends.',
-        meetingRegularity: 'Monthly (1st Thu)',
+        meetingRegularity: 'Monthly (3rd Mon at 11 CST)',
         informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
+        effectiveDate: 'March 27, 2026',
         r: ['trey'],
         a: ['blake'],
-        c: ['chris'],
-        i: ['ck', 'new_support_hire', 'gemma', 'amanda']
+        c: ['chris', 'amanda'],
+        i: ['ck', 'new_support_hire', 'gemma']
     },
     {
         id: 'open_source_community_management',
@@ -371,6 +371,37 @@ graph TD
 </ul>
 <h3>4. Document Maintenance</h3>
 <p>This SOP and roadmap should be reviewed regularly during monthly reviews.</p>
+        `
+    },
+    {
+        id: 'sop_dashboard_product',
+        title: 'Equalify Service Request Standard Operating Procedure (SOP)',
+        project: 'equalify',
+        area: 'dashboard_product',
+        responsible: 'trey',
+        accountable: 'blake',
+        effectiveDate: 'March 27, 2026',
+        reviewCadence: 'Monthly (3rd Mon at 11 CST)',
+        reportRegularity: 'On updates',
+        content: `
+<h3>1. Purpose &amp; Scope</h3>
+<p>To define the process for handling service requests related to the use of the Equalify accessibility scanning platform.</p>
+<h3>2. Procedures</h3>
+<h4>Step 1: Receipt and Logging</h4>
+<p>Requests for Equalify support should be filed in the Issues section of the Equalify github repository, by clicking the "New Issue" button in the top-right. Users may submit issues as either Bugs or Feature Requests; depending on the type of issue the user selects, the user will be given a pre-formatted issue which they should edit to include the details and information appropriate to their issue.</p>
+<ul>
+    <li><strong>Bugs</strong> are any issues with the Equalify interface or scan not performing as expected.</li>
+    <li><strong>Feature Requests</strong> are requests for additional functionally, changes in UI/UX, or any other new feature.</li>
+</ul>
+<p>Please include as much information as possible in your issue. The user creating the issue will be treated as the point of contact.</p>
+<p><em>Note for DASE team users:</em> In the case of an emergency issue - e.g. inability to access the Equalify service, breaking errors, etc - DASE team members may contact the Engineering team directly in the DASE Engineering chat in Microsoft Teams for immediate action. If appropriate, the Engineering team may create a git issue summarizing the problem.</p>
+<h4>Step 2: Prioritization</h4>
+<p>During Equalify Engineering's biweekly standups (Tues and Thurs at 12 CST), new Bug issues will be reviewed and added to the development schedule, based on severity/impact. Minor Feature Requests may also be added to the development schedule at this time.</p>
+<p>Major Feature Requests will be reviewed in the Monthly Feature Request meeting (Monthly on the 3rd Monday at 11 CST), and added to the roadmap and development schedule if deemed appropriate.</p>
+<h4>Step 3: Assignment &amp; Action</h4>
+<p>During the biweekly Engineering standups (Tues and Thurs at 12 CST), outstanding issues will be assigned to an Engineering team member and added to their development schedule, and a status note will be placed on the original issue indicating a solution is being worked on.</p>
+<h4>Step 4: Verification &amp; Closure</h4>
+<p>Status of the assigned outstanding issue will be reviewed at the biweekly Engineering standups (Tues and Thurs at 12 CST), and upon completion, the git issue will be updated to notify the original filer the issue has been resolved.</p>
         `
     }
 ];
