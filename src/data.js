@@ -12,7 +12,8 @@ export const people = [
     { id: 'asya', name: 'Asya' },
     { id: 'jason', name: 'Jason' },
     { id: 'dylan', name: 'Dylan' },
-    { id: 'lucy', name: 'Lucy' }
+    { id: 'lucy', name: 'Lucy' },
+    { id: 'helen', name: 'Helen' }
 ];
 
 export const projects = [
@@ -28,12 +29,12 @@ export const areas = [
         label: 'Team Management',
         project: 'dae',
         objective: 'Overarchingly manage the areas in this RACI chart.',
-        meetingRegularity: 'Monthly (1st Mon)',
+        meetingRegularity: 'As needed',
         informedRegularity: 'On updates',
         effectiveDate: '2026-02-27?',
         r: ['blake'],
         a: ['gemma'],
-        c: ['trey', 'chris', 'stefin'],
+        c: ['trey', 'chris', 'stefin', 'helen'],
         i: ['new_support_hire', 'amanda', 'brother_j', 'ck', 'michelle', 'asya', 'dylan']
     },
     {
@@ -241,7 +242,7 @@ export const sops = [
         responsible: 'blake',
         accountable: 'gemma',
         effectiveDate: '2026-02-27?',
-        reviewCadence: 'Monthly (1st Mon)',
+        reviewCadence: 'Monthly (Last Tue at 11AM)',
         reportRegularity: 'On Updates',
         content: `
 <h3>1) Overview</h3>
