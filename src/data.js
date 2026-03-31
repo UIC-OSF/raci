@@ -456,7 +456,7 @@ graph TD
         responsible: 'chris',
         accountable: 'blake',
         effectiveDate: 'March 26, 2026',
-        reviewCadence: 'Quarterly',
+        reviewCadence: 'Monthly (Third Wednesday at 10:30 CST)',
         reportRegularity: 'On Updates',
         content: `
 <h3>1. Purpose</h3>
@@ -464,13 +464,13 @@ graph TD
 <h3>2. Triage Cadence & Communication</h3>
 <h4>2.1. Triage Sessions</h4>
 <ul>
-    <li><strong>Frequency:</strong> Monthly</li>
+    <li><strong>Frequency:</strong> Monthly (Third Wednesday at 10:30 CST)</li>
     <li><strong>Participants:</strong> Chris, Trey (optional)</li>
     <li><strong>Objective:</strong> Review all new/unlabeled issues, apply labels, set priority.</li>
 </ul>
 <h4>2.2. Asynchronous Monitoring</h4>
 <ul>
-    <li>Team members should monitor the hub repo for new issues between triage sessions and flag anything urgent.</li>
+    <li>Chris should monitor the hub repo for new issues between triage sessions and flag anything urgent.</li>
 </ul>
 <h3>3. Triage Process</h3>
 <p>Each new issue should be walked through the following steps:</p>
@@ -514,8 +514,18 @@ graph TD
     <li><strong>Critical issues</strong> should be communicated immediately via the team's primary async channel (Teams) in addition to the GitHub issue.</li>
     <li>If an issue is unresolved past its target response window, escalate in the next triage session.</li>
 </ul>
-<h3>5. Document Maintenance</h3>
-<p>This SOP should be reviewed quarterly or when the team/process changes significantly.</p>
+<h3>5. Success and Failure Verification</h3>
+<p><strong>Success:</strong> Every new hub issue receives a timely, consistent triage response within the target response windows defined in this document.</p>
+<p><strong>Failure:</strong> Issues go unlabeled, unacknowledged, or unrouted, leading to missed bugs or delayed responses.</p>
+<p><strong>Failure Examples:</strong> Issues sitting in the repo for more than a week without labels or acknowledgment; critical issues not escalated same-day via Teams.</p>
+<h3>6. SOP Update Process</h3>
+<p>In the case of a required update to this SOP, the following process is followed:</p>
+<ol>
+    <li><strong>Call a meeting</strong> with those who may be affected by the change and anyone who raised concerns leading to the update.</li>
+    <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
+    <li><strong>Note the effective date</strong> on the updated SOP.</li>
+    <li><strong>Proceed</strong> with triage operations under the new procedures.</li>
+</ol>
         `
     }
 ];
