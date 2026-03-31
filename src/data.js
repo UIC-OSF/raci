@@ -45,10 +45,10 @@ export const areas = [
         meetingRegularity: 'Monthly (1st Fri)',
         informedRegularity: 'On updates',
         effectiveDate: 'TBD',
-        r: ['new_support_hire'],
-        a: ['amanda'],
-        c: ['chris', 'ck', 'trey', 'dylan', 'blake'],
-        i: ['gemma']
+        r: ['blake'],
+        a: ['gemma'],
+        c: ['amanda', 'helen', 'trey', 'chris'],
+        i: []
     },
     {
         id: 'documentation',
@@ -116,19 +116,6 @@ export const areas = [
         i: ['blake', 'gemma']
     },
     {
-        id: 'equalify_release',
-        label: 'Release',
-        project: 'equalify',
-        objective: 'Manage the full lifecycle of software releases, ensuring stability, performance, and seamless deployment of new features.',
-        meetingRegularity: 'Monthly (3rd Thu)',
-        informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
-        r: ['amanda'],
-        a: ['trey'],
-        c: ['blake', 'chris', 'ck', 'new_support_hire'],
-        i: ['gemma']
-    },
-    {
         id: 'user_testing_extension',
         label: 'User Testing Extension',
         project: 'equalify',
@@ -142,19 +129,6 @@ export const areas = [
         a: ['chris'],
         c: ['blake'],
         i: ['trey', 'gemma', 'amanda', 'new_support_hire', 'lucy']
-    },
-    {
-        id: 'operations',
-        label: 'Operations',
-        project: 'open_source_fund',
-        objective: 'Streamline administrative workflows, internal communications, and operational efficiency for the Open Source Fund.',
-        meetingRegularity: 'Monthly (3rd Tue)',
-        informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
-        r: ['michelle'],
-        a: ['blake'],
-        c: ['stefin'],
-        i: ['gemma']
     },
     {
         id: 'board_creation',
@@ -410,8 +384,8 @@ graph TD
         title: 'Support Desk and Knowledge Base Operations',
         project: 'equalify',
         area: 'support',
-        responsible: 'new_support_hire',
-        accountable: 'amanda',
+        responsible: 'blake',
+        accountable: 'gemma',
         effectiveDate: 'TBD',
         reviewCadence: 'Monthly (1st Fri)',
         reportRegularity: 'On updates',
