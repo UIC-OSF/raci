@@ -3,7 +3,6 @@ export const people = [
     { id: 'gemma', name: 'Jemma' },
     { id: 'stefin', name: 'Stefin' },
     { id: 'trey', name: 'Trey' },
-    { id: 'new_support_hire', name: 'New Support Hire' },
     { id: 'amanda', name: 'Amanda' },
     { id: 'chris', name: 'Chris' },
     { id: 'brother_j', name: 'Brother J' },
@@ -36,7 +35,7 @@ export const areas = [
         r: ['blake'],
         a: ['gemma'],
         c: ['trey', 'chris', 'stefin', 'helen'],
-        i: ['new_support_hire', 'amanda', 'brother_j', 'ck', 'michelle', 'asya', 'dylan']
+        i: ['amanda', 'brother_j', 'ck', 'michelle', 'asya', 'dylan']
     },
     {
         id: 'dae_osf_project_management',
@@ -74,7 +73,7 @@ export const areas = [
         effectiveDate: 'TBD',
         r: ['chris'],
         a: ['blake'],
-        c: ['trey', 'amanda', 'ck', 'new_support_hire'],
+        c: ['trey', 'amanda', 'ck'],
         i: ['gemma']
     },
     {
@@ -88,7 +87,7 @@ export const areas = [
         r: ['dylan'],
         a: ['blake'],
         c: ['gemma'],
-        i: ['chris', 'trey', 'ck', 'amanda', 'new_support_hire']
+        i: ['chris', 'trey', 'ck', 'amanda']
     },
     {
         id: 'dashboard_product',
@@ -101,7 +100,7 @@ export const areas = [
         r: ['trey'],
         a: ['blake'],
         c: ['chris', 'amanda'],
-        i: ['ck', 'new_support_hire', 'gemma']
+        i: ['ck', 'gemma']
     },
 
     {
@@ -130,7 +129,7 @@ export const areas = [
         r: ['ck', 'brother_j'],
         a: ['chris'],
         c: ['blake'],
-        i: ['trey', 'gemma', 'amanda', 'new_support_hire', 'lucy']
+        i: ['trey', 'gemma', 'amanda', 'lucy']
     },
 
     {
