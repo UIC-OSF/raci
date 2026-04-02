@@ -97,7 +97,7 @@ function renderGrid() {
         ${area.id === 'dae_team_management' ? '<div class="pin-badge" title="Pinned Area"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="17" x2="12" y2="22"></line><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.68V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3v4.68a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"></path></svg></div>' : ''}
         <div class="card-header">
           <h3>
-            ${getProjectName(area.project)} ${area.label} 
+            ${area.hideProject ? area.label : getProjectName(area.project) + ' ' + area.label} 
             ${area.tbd ? '<span class="pending-badge">PENDING</span>' : ''}
           </h3>
           <div class="area-meta-info">
@@ -121,7 +121,7 @@ function renderGrid() {
                 <li>
                   <button class="sop-text-link" onclick="openSOPModal('${sop.id}')">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-                    <span>${getProjectName(sop.project)}: ${sop.title}</span>
+                    <span>${sop.title}</span>
                   </button>
                 </li>
               `).join('')}
@@ -188,7 +188,7 @@ function renderTable() {
         <th scope="row">
           <div class="table-area-cell">
             <div class="area-label-group">
-              <span class="p-name">${getProjectName(area.project)}</span>
+              ${area.hideProject ? '' : `<span class="p-name">${getProjectName(area.project)}</span>`}
               <span class="a-label">
                 ${area.id === 'dae_team_management' ? '<svg aria-hidden="true" class="pin-icon-inline" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px; color: var(--accent-r);"><line x1="12" y1="17" x2="12" y2="22"></line><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.68V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3v4.68a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"></path></svg>' : ''}
                 ${area.label}
@@ -252,11 +252,11 @@ function renderSOPGrid() {
 
     return `
       <article class="raci-card">
-        <h3>${getProjectName(area.project)} ${area.label}</h3>
+        <h3>${area.hideProject ? area.label : getProjectName(area.project) + ' ' + area.label}</h3>
         <div class="sop-list">
           ${areaSOPs.map(sop => `
             <button class="sop-item-btn" data-sop-id="${sop.id}">
-              <span class="sop-title">${getProjectName(sop.project)}: ${sop.title}</span>
+              <span class="sop-title">${sop.title}</span>
               <span class="sop-meta">Responsible: ${getPersonName(sop.responsible)}</span>
             </button>
           `).join('')}
@@ -283,7 +283,7 @@ function renderSOPTable() {
     return `
       <tr>
         <td style="font-weight: 600;">
-          <button class="sop-table-link" data-sop-id="${sop.id}">${getProjectName(sop.project)}: ${sop.title}</button>
+          <button class="sop-table-link" data-sop-id="${sop.id}">${sop.title}</button>
         </td>
         <td>${area ? area.label : sop.area}</td>
         <td>${getPersonName(sop.responsible)}</td>
@@ -333,7 +333,7 @@ window.openSOPModal = function (sopId) {
   const titleEl = document.getElementById('sop-modal-title');
   const bodyEl = document.getElementById('sop-modal-body');
 
-  titleEl.textContent = `${getProjectName(sop.project)}: ${sop.title}`;
+  titleEl.textContent = `${sop.title}`;
   titleEl.setAttribute('tabindex', '-1'); // Ensure title can receive programmatic focus
 
   bodyEl.innerHTML = `

@@ -20,7 +20,8 @@ export const projects = [
     { id: 'dae', name: 'DAE' },
     { id: 'equalify', name: 'Equalify' },
     { id: 'ai_leaders', name: 'AI Leaders' },
-    { id: 'open_source_fund', name: 'Open Source Fund' }
+    { id: 'open_source_fund', name: 'Open Source Fund' },
+    { id: 'dae_osf', name: 'DAE/OSF' }
 ];
 
 export const areas = [
@@ -38,6 +39,19 @@ export const areas = [
         i: ['new_support_hire', 'amanda', 'brother_j', 'ck', 'michelle', 'asya', 'dylan']
     },
     {
+        id: 'dae_osf_project_management',
+        label: 'Project Management',
+        project: 'dae_osf',
+        objective: 'Encapsulate the general areas of management, including Open Source Fund Management, Equalify Open Source Community Management, and AI Leaders Management.',
+        meetingRegularity: 'As needed',
+        informedRegularity: 'On updates',
+        effectiveDate: 'April 2, 2026',
+        r: ['stefin'],
+        a: ['blake'],
+        c: ['gemma'],
+        i: ['michelle', 'amanda', 'trey', 'ck', 'chris', 'brother_j', 'asya']
+    },
+    {
         id: 'support',
         label: 'Support',
         project: 'equalify',
@@ -52,7 +66,7 @@ export const areas = [
     },
     {
         id: 'documentation',
-        label: 'Equalify Documentation',
+        label: 'Hub',
         project: 'equalify',
         objective: 'Develop, maintain, and innovate the Equalify Documentation to serve as the central accessibility management system.',
         meetingRegularity: 'Monthly (2nd Tue)',
@@ -78,7 +92,7 @@ export const areas = [
     },
     {
         id: 'dashboard_product',
-        label: 'Dashboard Product',
+        label: 'Dashboard',
         project: 'equalify',
         objective: 'Design and implement interactive, data-driven dashboards for visualizing complex accessibility metrics and trends.',
         meetingRegularity: 'Monthly (3rd Mon at 11 CST)',
@@ -89,19 +103,7 @@ export const areas = [
         c: ['chris', 'amanda'],
         i: ['ck', 'new_support_hire', 'gemma']
     },
-    {
-        id: 'open_source_community_management',
-        label: 'Equalify Open Source Community Management',
-        project: 'equalify',
-        objective: 'Foster collaboration and engagement within the open source community.',
-        meetingRegularity: 'TBD',
-        informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
-        r: [],
-        a: ['blake'],
-        c: [],
-        i: []
-    },
+
     {
         id: 'accessibility',
         label: 'Accessibility',
@@ -130,19 +132,7 @@ export const areas = [
         c: ['blake'],
         i: ['trey', 'gemma', 'amanda', 'new_support_hire', 'lucy']
     },
-    {
-        id: 'board_creation',
-        label: 'Management',
-        project: 'open_source_fund',
-        objective: 'Oversee strategic governance, stakeholder relations, and high-level fundraising initiatives for the fund.',
-        meetingRegularity: 'Monthly (2nd Wed)',
-        informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
-        r: ['blake'],
-        a: ['jason'],
-        c: ['stefin', 'gemma'],
-        i: ['michelle']
-    },
+
     {
         id: 'admissions',
         label: 'Student Services',
@@ -156,24 +146,13 @@ export const areas = [
         c: ['blake'],
         i: ['gemma', 'jason']
     },
-    {
-        id: 'ail_management',
-        label: 'Management',
-        project: 'ai_leaders',
-        objective: 'Provide strategic direction and administrative oversight for the AI Leaders program and its constituent representation.',
-        meetingRegularity: 'As needed',
-        informedRegularity: 'As needed',
-        effectiveDate: 'April 1, 2026',
-        r: ['stefin'],
-        a: ['blake'],
-        c: ['asya'],
-        i: ['jason', 'gemma']
-    },
+
     {
         id: 'ail_platform_buildout',
-        label: 'Platform Buildout',
+        label: 'plato',
         project: 'ai_leaders',
-        objective: 'Execute the initial platform buildout and support until May 14, followed by a transition to a newly established engineering team.',
+        hideProject: true,
+        objective: 'Execute the initial AI Leaders platform ("plato") buildout and support until May 14, followed by a transition to a newly established engineering team.',
         meetingRegularity: 'Weekly (Tue)',
         informedRegularity: 'On updates',
         effectiveDate: '2026-02-27',
@@ -438,9 +417,9 @@ graph TD
     },
     {
         id: 'sop_ail_management',
-        title: 'Management SOPs',
-        project: 'ai_leaders',
-        area: 'ail_management',
+        title: 'Managing AI Leaders SOPs',
+        project: 'dae_osf',
+        area: 'dae_osf_project_management',
         responsible: 'stefin',
         accountable: 'blake',
         effectiveDate: 'April 1, 2026',
@@ -451,6 +430,23 @@ graph TD
 <p>This management SOP speaks to creating new team SOPs.</p>
 <h3>2. Process</h3>
 <p>Anyone responsible and accountable for the SOP will discuss then ping Blake with the SOP in the AI Leaders slack. Blake will update the Roles &amp; Responsibilities document.</p>
+        `
+    },
+    {
+        id: 'sop_uic_equalify_transition',
+        title: 'UIC Equalify Transition',
+        project: 'dae_osf',
+        area: 'dae_osf_project_management',
+        responsible: 'stefin',
+        accountable: 'blake',
+        effectiveDate: 'April 2, 2026',
+        reviewCadence: 'Weekly',
+        reportRegularity: 'On updates',
+        content: `
+<h3>1. Purpose</h3>
+<p>To manage the Equalify UIC Transition, while building Equalify's Open Source community.</p>
+<h3>2. Process</h3>
+<p>Stefin will run a weekly meeting with the DAS/OSF team to coordinate open sourcing and releasing Equalify according to the timeline at <a href="https://it.uic.edu/accessibility/uic-equalify/#timeline" target="_blank">https://it.uic.edu/accessibility/uic-equalify/#timeline</a>.</p>
         `
     }
 ];
