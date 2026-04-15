@@ -350,7 +350,7 @@ graph TD
 <p><em>Note for DASE team users:</em> In the case of an emergency issue - e.g. inability to access the Equalify service, breaking errors, etc - DASE team members may contact the Engineering team directly in the DASE Engineering chat in Microsoft Teams for immediate action. If appropriate, the Engineering team may create a git issue summarizing the problem.</p>
 <h4>Step 2: Prioritization</h4>
 <p>During Equalify Engineering's biweekly standups (Tues and Thurs at 12 CST), new Bug issues will be reviewed and added to the development schedule, based on severity/impact. Minor Feature Requests may also be added to the development schedule at this time.</p>
-<p>Major Feature Requests will be reviewed in the Monthly Feature Request meeting (Monthly on the 3rd Monday at 11 CST), and added to the roadmap and development schedule if deemed appropriate.</p>
+<p>Major Feature Requests will be reviewed in the Monthly Feature & Roadmap Review meeting (Monthly on the 3rd Monday at 11 CST), and added to the roadmap and development schedule if deemed appropriate.</p>
 <h4>Step 3: Assignment &amp; Action</h4>
 <p>During the biweekly Engineering standups (Tues and Thurs at 12 CST), outstanding issues will be assigned to an Engineering team member and added to their development schedule, and a status note will be placed on the original issue indicating a solution is being worked on.</p>
 <h4>Step 4: Verification &amp; Closure</h4>
