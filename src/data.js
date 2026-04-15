@@ -335,7 +335,7 @@ graph TD
         accountable: 'blake',
         effectiveDate: 'March 27, 2026',
         reviewCadence: 'Monthly (3rd Mon at 11 CST)',
-        reportRegularity: 'On updates',
+        reportRegularity: 'Monthly (3rd Wednesdays)',
         content: `
 <h3>1. Purpose &amp; Scope</h3>
 <p>To define the process for handling service requests related to the use of the Equalify accessibility scanning platform.</p>
