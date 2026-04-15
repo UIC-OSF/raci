@@ -452,7 +452,7 @@ graph TD
         id: 'sop_hub_issue_triage',
         title: 'Equalify Hub Issue Triage',
         project: 'equalify',
-        area: 'open_source_community_management',
+        area: 'documentation',
         responsible: 'chris',
         accountable: 'blake',
         effectiveDate: 'March 26, 2026',
