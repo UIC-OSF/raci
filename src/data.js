@@ -95,12 +95,12 @@ export const areas = [
         project: 'equalify',
         objective: 'Design and implement interactive, data-driven dashboards for visualizing complex accessibility metrics and trends.',
         meetingRegularity: 'Monthly (3rd Mon at 11 CST)',
-        informedRegularity: 'On updates',
+        informedRegularity: 'Monthly (3rd Wednesdays)',
         effectiveDate: 'March 27, 2026',
         r: ['trey'],
         a: ['blake'],
         c: ['chris', 'amanda'],
-        i: ['ck', 'gemma']
+        i: ['helen', 'gemma']
     },
 
     {
@@ -525,6 +525,45 @@ graph TD
     <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
     <li><strong>Note the effective date</strong> on the updated SOP.</li>
     <li><strong>Proceed</strong> with triage operations under the new procedures.</li>
+</ol>
+        `
+    },
+    {
+        id: 'sop_dashboard_dase_review',
+        title: 'DASE Leaders Roadmap + Feature Reviews',
+        project: 'equalify',
+        area: 'dashboard_product',
+        responsible: 'trey',
+        accountable: 'blake',
+        effectiveDate: 'April 15, 2026',
+        reviewCadence: 'Monthly (3rd Wednesday at 11:00 AM CST)',
+        reportRegularity: 'Monthly (3rd Wednesdays)',
+        content: `
+<h3>1. Purpose</h3>
+<p>This SOP defines the process for DASE Leaders to review the Equalify Dashboard roadmap and completed features on a monthly basis. The goal is to ensure DASE leadership has visibility into Dashboard progress and an opportunity to provide feedback.</p>
+<h3>2. Meeting Cadence</h3>
+<ul>
+    <li><strong>Frequency:</strong> Monthly (3rd Wednesday at 11:00 AM CST)</li>
+    <li><strong>Presenter:</strong> Trey</li>
+    <li><strong>Attendees:</strong> Helen, Jemma</li>
+</ul>
+<h3>3. Process</h3>
+<ol>
+    <li>Trey presents features that have been completed during the preceding month.</li>
+    <li>Trey presents the Dashboard roadmap, which has been approved by the Equalify Team (Blake, Chris, and Amanda) during their monthly meetings.</li>
+    <li>DASE Leaders (Helen and Jemma) review and provide feedback on both completed features and the roadmap.</li>
+</ol>
+<h3>4. Success and Failure Verification</h3>
+<p><strong>Success:</strong> DASE Leaders receive a monthly presentation of completed features and the approved roadmap, and have a clear opportunity to provide feedback.</p>
+<p><strong>Failure:</strong> Reviews are skipped, roadmap is presented without prior Equalify Team approval, or DASE Leaders are not given the opportunity to provide feedback.</p>
+<p><strong>Failure Examples:</strong> A monthly review meeting is missed without rescheduling; features are presented that were not discussed in the Equalify Team's monthly meetings.</p>
+<h3>5. SOP Update Process</h3>
+<p>In the case of a required update to this SOP, the following process is followed:</p>
+<ol>
+    <li><strong>Call a meeting</strong> with those who may be affected by the change and anyone who raised concerns leading to the update.</li>
+    <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
+    <li><strong>Note the effective date</strong> on the updated SOP.</li>
+    <li><strong>Proceed</strong> with operations under the new procedures.</li>
 </ol>
         `
     }
