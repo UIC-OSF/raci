@@ -70,7 +70,7 @@ export const areas = [
         objective: 'Develop, maintain, and innovate the Equalify Documentation to serve as the central accessibility management system.',
         meetingRegularity: 'Monthly (2nd Tue)',
         informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
+        effectiveDate: 'March 26, 2026',
         r: ['chris'],
         a: ['blake'],
         c: ['trey', 'amanda', 'ck'],
