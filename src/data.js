@@ -68,12 +68,12 @@ export const areas = [
         label: 'Hub',
         project: 'equalify',
         objective: 'Develop, maintain, and innovate the Equalify Documentation to serve as the central accessibility management system.',
-        meetingRegularity: 'Monthly (2nd Tue)',
+        meetingRegularity: 'Monthly (3rd Wednesday)',
         informedRegularity: 'On updates',
         effectiveDate: 'March 26, 2026',
         r: ['chris'],
         a: ['blake'],
-        c: ['trey', 'amanda', 'ck'],
+        c: ['trey', 'amanda'],
         i: ['gemma']
     },
     {
@@ -465,7 +465,7 @@ graph TD
 <h4>2.1. Triage Sessions</h4>
 <ul>
     <li><strong>Frequency:</strong> Monthly (Third Wednesday at 10:30 CST)</li>
-    <li><strong>Participants:</strong> Chris, Trey (optional)</li>
+    <li><strong>Participants:</strong> Chris, Blake, Amanda, Trey</li>
     <li><strong>Objective:</strong> Review all new/unlabeled issues, apply labels, set priority.</li>
 </ul>
 <h4>2.2. Asynchronous Monitoring</h4>
