@@ -94,12 +94,12 @@ export const areas = [
         label: 'Dashboard',
         project: 'equalify',
         objective: 'Design and implement interactive, data-driven dashboards for visualizing complex accessibility metrics and trends.',
-        meetingRegularity: 'Monthly (3rd Mon at 11 CST)',
+        meetingRegularity: 'Monthly (3rd Wednesdays)',
         informedRegularity: 'Monthly (3rd Wednesdays)',
         effectiveDate: 'March 27, 2026',
         r: ['trey'],
         a: ['blake'],
-        c: ['chris', 'amanda'],
+        c: ['chris'],
         i: ['helen', 'gemma']
     },
 
@@ -123,7 +123,7 @@ export const areas = [
         objective: 'Develop and maintain specialized tools for gathering and analyzing direct user feedback on accessibility barriers.',
         responsibleRegularity: 'Weekly (Tue and Thu)',
         accountableRegularity: 'Weekly (Mon and Fri)',
-        meetingRegularity: 'Monthly (3rd Wed)',
+        meetingRegularity: 'Monthly (Third Tuesday)',
         informedRegularity: 'Monthly (2nd Mon)',
         effectiveDate: 'March 18, 2026',
         r: ['ck', 'brother_j'],
@@ -255,7 +255,7 @@ graph TD
         accountable: 'chris',
         effectiveDate: 'March 18, 2026',
         reviewCadence: 'Weekly (Tue and Thu)',
-        reportRegularity: 'Monthly (2nd Mon)',
+        reportRegularity: 'Monthly (Third Tuesday)',
         content: `
 <h3>1. Purpose</h3>
 <p>This document outlines the standard operating procedures, communication protocols, and the development timeline for the User Testing Extension. It serves to align the engineering team on feature planning, UI considerations, and implementation milestones.</p>
@@ -275,7 +275,7 @@ graph TD
 </ul>
 <h4>2.3. Consulted Monthly Reviews</h4>
 <ul>
-    <li><strong>Frequency:</strong> Monthly (3rd Wed)</li>
+    <li><strong>Frequency:</strong> Monthly (Third Tuesday)</li>
     <li><strong>Participants:</strong> Blake, CK, Brother J</li>
     <li><strong>Objective:</strong> Provide updates to Consulted members to gather insight, clear roadblocks, and validate features against overarching accessibility goals.</li>
 </ul>
@@ -334,7 +334,7 @@ graph TD
         responsible: 'trey',
         accountable: 'blake',
         effectiveDate: 'March 27, 2026',
-        reviewCadence: 'Monthly (3rd Mon at 11 CST)',
+        reviewCadence: 'Monthly (3rd Wednesdays)',
         reportRegularity: 'Monthly (3rd Wednesdays)',
         content: `
 <h3>1. Purpose &amp; Scope</h3>
@@ -350,7 +350,7 @@ graph TD
 <p><em>Note for DASE team users:</em> In the case of an emergency issue - e.g. inability to access the Equalify service, breaking errors, etc - DASE team members may contact the Engineering team directly in the DASE Engineering chat in Microsoft Teams for immediate action. If appropriate, the Engineering team may create a git issue summarizing the problem.</p>
 <h4>Step 2: Prioritization</h4>
 <p>During Equalify Engineering's biweekly standups (Tues and Thurs at 12 CST), new Bug issues will be reviewed and added to the development schedule, based on severity/impact. Minor Feature Requests may also be added to the development schedule at this time.</p>
-<p>Major Feature Requests will be reviewed in the Monthly Feature & Roadmap Review meeting (Monthly on the 3rd Monday at 11 CST), and added to the roadmap and development schedule if deemed appropriate.</p>
+<p>Major Feature Requests will be reviewed in the Monthly Feature & Roadmap Review meeting (Monthly on the 3rd Wednesday at 10 CST), and added to the roadmap and development schedule if deemed appropriate.</p>
 <h4>Step 3: Assignment &amp; Action</h4>
 <p>During the biweekly Engineering standups (Tues and Thurs at 12 CST), outstanding issues will be assigned to an Engineering team member and added to their development schedule, and a status note will be placed on the original issue indicating a solution is being worked on.</p>
 <h4>Step 4: Verification &amp; Closure</h4>
@@ -456,7 +456,7 @@ graph TD
         responsible: 'chris',
         accountable: 'blake',
         effectiveDate: 'March 26, 2026',
-        reviewCadence: 'Monthly (Third Wednesday at 10:30 CST)',
+        reviewCadence: 'Monthly (Third Wednesday at 10:00 CST)',
         reportRegularity: 'On Updates',
         content: `
 <h3>1. Purpose</h3>
@@ -464,7 +464,7 @@ graph TD
 <h3>2. Triage Cadence & Communication</h3>
 <h4>2.1. Triage Sessions</h4>
 <ul>
-    <li><strong>Frequency:</strong> Monthly (Third Wednesday at 10:30 CST)</li>
+    <li><strong>Frequency:</strong> Monthly (Third Wednesday at 10:00 CST)</li>
     <li><strong>Participants:</strong> Chris, Blake, Amanda, Trey</li>
     <li><strong>Objective:</strong> Review all new/unlabeled issues, apply labels, set priority.</li>
 </ul>
@@ -536,27 +536,41 @@ graph TD
         responsible: 'trey',
         accountable: 'blake',
         effectiveDate: 'April 15, 2026',
-        reviewCadence: 'Monthly (3rd Wednesday at 11:00 AM CST)',
-        reportRegularity: 'Monthly (3rd Wednesdays)',
+        reviewCadence: 'Monthly (3rd Wednesdays)',
+        reportRegularity: 'As Needed',
         content: `
 <h3>1. Purpose</h3>
 <p>This SOP defines the process for DASE Leaders to review the Equalify Dashboard roadmap and completed features on a monthly basis. The goal is to ensure DASE leadership has visibility into Dashboard progress and an opportunity to provide feedback.</p>
 <h3>2. Meeting Cadence</h3>
+<p><strong>Frequency:</strong> Monthly (3rd Wednesdays) — Three consecutive meetings:</p>
 <ul>
-    <li><strong>Frequency:</strong> Monthly (3rd Wednesday at 11:00 AM CST)</li>
-    <li><strong>Presenter:</strong> Trey</li>
-    <li><strong>Attendees:</strong> Helen, Jemma</li>
+    <li><strong>10:30 AM CST — Internal Pre-Review:</strong> Equalify Dashboard team (Trey, Blake, Chris) reviews the roadmap and features internally to align before the DASE Leaders meeting.</li>
+    <li><strong>11:00 AM CST — DASE Leaders Review:</strong> Trey presents to DASE Leaders (Helen, Jemma) and collects feedback on completed features and the roadmap.</li>
+    <li><strong>11:30 AM CST — Internal Post-Review:</strong> Equalify Dashboard team (Trey, Blake, Chris) reconvenes to set responses and action items based on DASE Leaders feedback.</li>
 </ul>
 <h3>3. Process</h3>
+<h4>10:30 AM — Internal Pre-Review (Trey, Blake, Chris)</h4>
+<ol>
+    <li>Review features completed during the preceding month.</li>
+    <li>Review the current Dashboard roadmap.</li>
+    <li>Align on talking points and any known concerns before presenting to DASE Leaders.</li>
+</ol>
+<h4>11:00 AM — DASE Leaders Review (Trey, Helen, Jemma)</h4>
 <ol>
     <li>Trey presents features that have been completed during the preceding month.</li>
-    <li>Trey presents the Dashboard roadmap, which has been approved by the Equalify Team (Blake, Chris, and Amanda) during their monthly meetings.</li>
+    <li>Trey presents the Dashboard roadmap.</li>
     <li>DASE Leaders (Helen and Jemma) review and provide feedback on both completed features and the roadmap.</li>
 </ol>
+<h4>11:30 AM — Internal Post-Review (Trey, Blake, Chris)</h4>
+<ol>
+    <li>Debrief on feedback received from DASE Leaders.</li>
+    <li>Set responses and action items based on the feedback.</li>
+    <li>Update the roadmap and development schedule as needed.</li>
+</ol>
 <h3>4. Success and Failure Verification</h3>
-<p><strong>Success:</strong> DASE Leaders receive a monthly presentation of completed features and the approved roadmap, and have a clear opportunity to provide feedback.</p>
-<p><strong>Failure:</strong> Reviews are skipped, roadmap is presented without prior Equalify Team approval, or DASE Leaders are not given the opportunity to provide feedback.</p>
-<p><strong>Failure Examples:</strong> A monthly review meeting is missed without rescheduling; features are presented that were not discussed in the Equalify Team's monthly meetings.</p>
+<p><strong>Success:</strong> The Equalify Dashboard team conducts an internal pre-review, DASE Leaders receive a monthly presentation of completed features and the roadmap with a clear opportunity to provide feedback, and the Dashboard team reconvenes to set responses and action items.</p>
+<p><strong>Failure:</strong> Any of the three meetings are skipped, the internal pre-review does not occur before the DASE Leaders meeting, DASE Leaders are not given the opportunity to provide feedback, or the post-review to set action items does not occur.</p>
+<p><strong>Failure Examples:</strong> A monthly review cycle is missed without rescheduling; the DASE Leaders meeting occurs without the internal pre-review; feedback from DASE Leaders is not followed up with action items in the post-review.</p>
 <h3>5. SOP Update Process</h3>
 <p>In the case of a required update to this SOP, the following process is followed:</p>
 <ol>
