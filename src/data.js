@@ -94,13 +94,13 @@ export const areas = [
         label: 'Dashboard',
         project: 'equalify',
         objective: 'Design and implement interactive, data-driven dashboards for visualizing complex accessibility metrics and trends.',
-        meetingRegularity: 'Monthly (3rd Wednesdays)',
+        meetingRegularity: 'Monthly (3rd Thursdays)',
         informedRegularity: 'Monthly (3rd Wednesdays)',
-        effectiveDate: 'March 27, 2026',
+        effectiveDate: 'April 20, 2026',
         r: ['trey'],
         a: ['blake'],
-        c: ['chris'],
-        i: ['helen', 'gemma']
+        c: ['chris', 'gemma'],
+        i: ['helen']
     },
 
     {
@@ -530,54 +530,56 @@ graph TD
     },
     {
         id: 'sop_dashboard_dase_review',
-        title: 'DASE Leaders Roadmap + Feature Reviews',
+        title: 'Roadmap Updates and Customer Communication',
         project: 'equalify',
         area: 'dashboard_product',
         responsible: 'trey',
         accountable: 'blake',
-        effectiveDate: 'April 15, 2026',
-        reviewCadence: 'Monthly (3rd Wednesdays)',
-        reportRegularity: 'As Needed',
+        effectiveDate: 'April 20, 2026',
+        reviewCadence: 'Monthly (3rd Thursdays)',
+        reportRegularity: 'Monthly (3rd Wednesdays)',
         content: `
 <h3>1. Purpose</h3>
-<p>This SOP defines the process for DASE Leaders to review the Equalify Dashboard roadmap and completed features on a monthly basis. The goal is to ensure DASE leadership has visibility into Dashboard progress and an opportunity to provide feedback.</p>
+<p>This SOP defines the process for the Equalify Dashboard team to present the roadmap and completed features to customers on a monthly basis, and to prioritize the roadmap and plan follow-up communications with customers. The goal is to ensure customers have visibility into Dashboard progress and an opportunity to provide feedback, and that customer and team input shapes the month ahead. No promises are made to customers during these presentations.</p>
 <h3>2. Meeting Cadence</h3>
-<p><strong>Frequency:</strong> Monthly (3rd Wednesdays) — Three consecutive meetings:</p>
+<p><strong>Frequency:</strong> Monthly — Two meetings on 3rd Wednesdays and one meeting on 3rd Thursdays:</p>
 <ul>
-    <li><strong>10:30 AM CST — Internal Pre-Review:</strong> Equalify Dashboard team (Trey, Blake, Chris) reviews the roadmap and features internally to align before the DASE Leaders meeting.</li>
-    <li><strong>11:00 AM CST — DASE Leaders Review:</strong> Trey presents to DASE Leaders (Helen, Jemma) and collects feedback on completed features and the roadmap.</li>
-    <li><strong>11:30 AM CST — Internal Post-Review:</strong> Equalify Dashboard team (Trey, Blake, Chris) reconvenes to set responses and action items based on DASE Leaders feedback.</li>
+    <li><strong>3rd Wednesdays, 10:30 AM CST — Internal Pre-Review (Customer Comms Strategizing Meeting):</strong> Equalify Dashboard team reviews features and the roadmap, then decides what needs to be presented to customers.</li>
+    <li><strong>3rd Wednesdays, 11:00 AM CST — Customer Presentation:</strong> Equalify Dashboard team presents to customers and collects feedback on completed features and the roadmap. No promises are made!</li>
+    <li><strong>3rd Thursdays, 10:00 AM–12:00 PM CST — Roadmap and Feature Prioritization:</strong> Equalify Dashboard team takes customer feedback, reviews new feature ideas from the team and any additional feedback, and builds a plan for the month ahead and follow-up communications for customers.</li>
 </ul>
 <h3>3. Process</h3>
-<h4>10:30 AM — Internal Pre-Review (Trey, Blake, Chris)</h4>
+<h4>3rd Wednesdays, 10:30 AM — Internal Pre-Review / Customer Comms Strategizing Meeting (Equalify Dashboard team)</h4>
 <ol>
     <li>Review features completed during the preceding month.</li>
     <li>Review the current Dashboard roadmap.</li>
-    <li>Align on talking points and any known concerns before presenting to DASE Leaders.</li>
+    <li>Align on talking points and any known concerns before presenting to customers.</li>
 </ol>
-<h4>11:00 AM — DASE Leaders Review (Trey, Helen, Jemma)</h4>
+<h4>3rd Wednesdays, 11:00 AM — Customer Presentation (Equalify Dashboard team, Customers)</h4>
 <ol>
-    <li>Trey presents features that have been completed during the preceding month.</li>
-    <li>Trey presents the Dashboard roadmap.</li>
-    <li>DASE Leaders (Helen and Jemma) review and provide feedback on both completed features and the roadmap.</li>
+    <li>Equalify Dashboard team presents features that have been completed during the preceding month.</li>
+    <li>Equalify Dashboard team presents the Dashboard roadmap.</li>
+    <li>Customers review and provide feedback on both completed features and the roadmap.</li>
+    <li>No promises are made to customers during the presentation.</li>
 </ol>
-<h4>11:30 AM — Internal Post-Review (Trey, Blake, Chris)</h4>
+<h4>3rd Thursdays, 10:00 AM–12:00 PM — Roadmap and Feature Prioritization (Equalify Dashboard team)</h4>
 <ol>
-    <li>Debrief on feedback received from DASE Leaders.</li>
-    <li>Set responses and action items based on the feedback.</li>
-    <li>Update the roadmap and development schedule as needed.</li>
+    <li>Review customer feedback gathered since the last prioritization meeting.</li>
+    <li>Review new feature ideas from the team and any additional feedback (including input from customers).</li>
+    <li>Build a plan for the month ahead, updating the roadmap and development schedule as needed.</li>
+    <li>Define follow-up communications for customers based on the plan.</li>
 </ol>
 <h3>4. Success and Failure Verification</h3>
-<p><strong>Success:</strong> The Equalify Dashboard team conducts an internal pre-review, DASE Leaders receive a monthly presentation of completed features and the roadmap with a clear opportunity to provide feedback, and the Dashboard team reconvenes to set responses and action items.</p>
-<p><strong>Failure:</strong> Any of the three meetings are skipped, the internal pre-review does not occur before the DASE Leaders meeting, DASE Leaders are not given the opportunity to provide feedback, or the post-review to set action items does not occur.</p>
-<p><strong>Failure Examples:</strong> A monthly review cycle is missed without rescheduling; the DASE Leaders meeting occurs without the internal pre-review; feedback from DASE Leaders is not followed up with action items in the post-review.</p>
+<p><strong>Success:</strong> All three monthly meetings occur in order — the Internal Pre-Review on the 3rd Wednesday, the Customer Presentation on the 3rd Wednesday, and the Roadmap and Feature Prioritization meeting on the 3rd Thursday. Customers receive a presentation of completed features and the roadmap with an opportunity to provide feedback, no promises are made to customers during the presentation, and the Roadmap and Feature Prioritization meeting produces an updated plan for the month ahead and follow-up communications for customers.</p>
+<p><strong>Failure:</strong> Any of the three meetings are skipped or occur out of order, the Internal Pre-Review does not occur before the Customer Presentation, customers are not given the opportunity to provide feedback, promises are made to customers during the Customer Presentation, or the Roadmap and Feature Prioritization meeting does not produce a plan for the month ahead and follow-up communications for customers.</p>
+<p><strong>Failure Examples:</strong> A monthly cycle is missed without rescheduling; the Customer Presentation occurs without the Internal Pre-Review preceding it; commitments or promises are made to customers during the Customer Presentation; the Roadmap and Feature Prioritization meeting concludes without an updated plan or defined customer follow-up communications.</p>
 <h3>5. SOP Update Process</h3>
 <p>In the case of a required update to this SOP, the following process is followed:</p>
 <ol>
-    <li><strong>Call a meeting</strong> with those who may be affected by the change and anyone who raised concerns leading to the update.</li>
+    <li><strong>Call a meeting</strong> with those affected by the change — at minimum the Equalify Dashboard team, and any customers or DASE Leaders who raised concerns leading to the update.</li>
     <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
     <li><strong>Note the effective date</strong> on the updated SOP.</li>
-    <li><strong>Proceed</strong> with operations under the new procedures.</li>
+    <li><strong>Proceed</strong> with operations under the new procedures at the next monthly cycle.</li>
 </ol>
         `
     }
