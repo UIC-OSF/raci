@@ -188,7 +188,7 @@ export const roleDefinitions = {
 export const sops = [
     {
         id: 'sop_dae_management',
-        title: 'Procedure and Management',
+        title: 'DAE Team Management',
         project: 'dae',
         area: 'dae_team_management',
         responsible: 'blake',
@@ -197,52 +197,120 @@ export const sops = [
         reviewCadence: 'Monthly (Last Tue at 11AM)',
         reportRegularity: 'On Updates',
         content: `
-<h3>1) Overview</h3>
-<p>This SOP overarchingly details how to manage the areas in this RACI chart. <mark><strong>The SOP's primary focus is to empower individual ownership and streamline communication to maximize the performance of team projects.</strong></mark> Each responsible party can create an SOP with those accountable for their RACI area. SOPs are agreements laying out clear objectives and communication strategies that the Responsible and Accountable parties agree to.</p>
-<h3>2) Communication Procedures</h3>
+<h3>1. Purpose</h3>
+<p>This SOP defines how the DAE team is managed across all projects. <mark><strong>Its primary focus is to empower individual ownership and streamline communication to maximize the performance of team projects.</strong></mark></p>
+<h3>2. Team Management Principles</h3>
+<ul>
+    <li><strong>Individual ownership:</strong> every area of work has a clear owner who is responsible for delivery.</li>
+    <li><strong>Continuous collaboration:</strong> the owner and the person ultimately accountable for the area work closely throughout, not just at review points.</li>
+    <li><strong>Scheduled, proactive communication:</strong> updates and feedback happen on an agreed cadence rather than reactively.</li>
+    <li><strong>Documented agreements:</strong> the objectives, cadence, and procedures for each area are captured in an SOP that the owner and accountable party agree to.</li>
+    <li><strong>Minimum viable process:</strong> the team uses only the structure needed to deliver — no extra ceremony.</li>
+</ul>
+<h3>3. Mechanisms Used to Facilitate Management</h3>
+<p>The DAE team uses several mechanisms to put these principles into practice. The RACI chart is one of them; it does not replace direct communication or judgment.</p>
+<ul>
+    <li><strong>Per-area SOPs:</strong> agreements between the owner and the accountable party laying out objectives, meeting cadence, reporting cadence, and area-specific procedures.</li>
+    <li><strong>RACI chart:</strong> clarifies who is Responsible, Accountable, Consulted, and Informed for each area, so the team knows whose decision is whose and who needs to be looped in.</li>
+    <li><strong>Regular meetings:</strong> cadence is defined per area SOP. Meetings exist to surface blockers and gather feedback from Consulted parties.</li>
+    <li><strong>Update reports:</strong> the Responsible party pushes updates to Informed stakeholders at the regularity defined in the area's SOP.</li>
+</ul>
+<h3>4. Communication Procedures</h3>
 <ol>
     <li>Responsible and Accountable parties <strong>collaborate continuously</strong> on the development of the area.</li>
-    <li>Those accountable <strong>support</strong> the presentation and <strong>validate</strong> area progress.</li>
-    <li>The Responsible person <strong>presents</strong> updates and <strong>solicits</strong> feedback from those who need to be consulted during the regular update meeting.</li>
-    <li>Those informed <strong>receive update reports</strong> from the responsible person within the agreed regularity, stipulated in the SOP.</li>
+    <li>The Accountable party <strong>supports</strong> the presentation and <strong>validates</strong> area progress.</li>
+    <li>The Responsible person <strong>presents</strong> updates and <strong>solicits feedback</strong> from Consulted parties during the regular update meeting.</li>
+    <li>Informed parties <strong>receive update reports</strong> from the Responsible person at the regularity stipulated in the area's SOP.</li>
 </ol>
-<h3>3) Success and Failure Verification</h3>
-<p><strong>Success:</strong> Team operations remain strictly within the communication procedures outlined in this document.</p>
-<p><strong>Failure:</strong> Procedures are circumnavigated, leading to operational inefficiency.</p>
-<p><strong>Failure Examples:</strong> Additional meetings or communication required by parties who are neither Responsible nor Accountable for the specific area.</p>
-<h3>4) Remediation</h3>
-<p>In the event of failure, the team is expected to work down this sequential list:</p>
+<h3>5. Success and Failure Verification</h3>
+<p><strong>Success:</strong> Each area has a clear owner; communication and updates happen on the cadence agreed in the area's SOP; concerns are raised through the right channel (Consulted parties, regular meetings) rather than escalating around them.</p>
+<p><strong>Failure:</strong> Ownership is unclear or contested, communication is reactive instead of scheduled, agreed cadences are skipped without rescheduling, or parties who are neither Responsible nor Accountable for an area direct its work.</p>
+<p><strong>Failure Examples:</strong> Additional meetings or communication required by parties who are neither Responsible nor Accountable for the specific area; an area's regular review is missed without rescheduling; decisions about an area are made without consulting its Responsible owner.</p>
+<h3>6. Remediation</h3>
+<p>When failure occurs, the team works down this sequential list:</p>
 <ol>
-    <li>Address the system that created the bug causing the failure.</li>
+    <li>Address the underlying system or process that caused the failure.</li>
     <li>Increase consultation meeting regularity for the impacted area.</li>
-    <li>Update RACI items to ensure clarity and alignment with operational needs. Updating the RACI is the final end of the remediation process and should be prevented at all costs.</li>
+    <li>Update RACI items to restore clarity and alignment. This is the final step in remediation and should be avoided where possible, since stable RACI assignments support stable operations.</li>
 </ol>
-<h3>5) Procedure Flow Diagram</h3>
+<h3>7. Procedure Flow Diagram</h3>
 <pre class="mermaid">
 graph TD
     Start((Operational Start)) --> Process[Continuous Collaboration<br/>R & A Parties]
-    Process --> Prep[Accountable Support &<br/>Validate Progress]
+    Process --> Prep[Accountable Supports &<br/>Validates Progress]
     Prep --> Presentation[Responsible Presents & Solicits<br/>Consulted Feedback at Meeting]
     Presentation --> Informed[Informed Receive Regular Update Reports]
     Informed --> SuccessCheck{Procedures Followed?}
-    
+
     SuccessCheck -- Yes --> Success([Success: Efficient Operations])
     SuccessCheck -- No --> Failure([Failure: Procedures Circumnavigated])
-    
-    Failure --> Remediation1[1. Address System Bug<br/>Causing Failure]
+
+    Failure --> Remediation1[1. Address Underlying<br/>System or Process]
     Remediation1 --> Remediation2[2. Increase Consultation<br/>Meeting Regularity]
-    Remediation2 --> Remediation3[3. Update RACI Items<br/>Final End - Prevent if possible]
-    
+    Remediation2 --> Remediation3[3. Update RACI Items<br/>Last Resort - Avoid if possible]
+
     Success --> Start
     Remediation3 --> Start
 </pre>
-<h3>6) RACI Update Process</h3>
-<p>In the case of a new area implementation or a required RACI update, the following process is followed:</p>
+<h3>8. RACI and SOP Update Process</h3>
+<p>When a new area is introduced or an existing RACI/SOP needs to change, the following process is followed:</p>
 <ol>
-    <li><strong>Call a meeting</strong> with those who may be affected by the RACI update and anyone who raised concerns leading to the update.</li>
+    <li><strong>Call a meeting</strong> with those affected by the change and anyone who raised concerns leading to the update.</li>
     <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
-    <li><strong>Note the effective date</strong> on the updated RACI item.</li>
+    <li><strong>Note the effective date</strong> on the updated RACI item or SOP.</li>
     <li><strong>Proceed</strong> with team operations under the new assignments.</li>
+</ol>
+        `
+    },
+    {
+        id: 'sop_po_and_contractor_expenses',
+        title: 'Purchase Order and Contractor Expense Management',
+        project: 'dae',
+        area: 'dae_team_management',
+        responsible: 'blake',
+        accountable: 'gemma',
+        effectiveDate: '2026-04-29',
+        reviewCadence: 'As needed',
+        reportRegularity: 'On Updates',
+        content: `
+<h3>1. Purpose &amp; Scope</h3>
+<p>This SOP defines how the DAE team manages Purchase Orders (POs), tracks contractor invoices and expenses, and coordinates with TS Accounting. It applies to all PO-funded contractor work and any TDX request related to a PO.</p>
+<h3>2. PO TDX Request Communication</h3>
+<ul>
+    <li>The Director (Jemma) and Assistant Director (Blake) must be cc'd on <strong>all</strong> PO-related TDX requests.</li>
+    <li>Michelle will cc Jemma and Blake whenever she creates a TDX ticket.</li>
+    <li>Anyone working with a PO and contractor is responsible for keeping the Director and Assistant Director in the loop on the associated TDX correspondence.</li>
+</ul>
+<h3>3. Internal Invoice and Expense Tracking</h3>
+<p>TS Accounting (Kunal) does <strong>not</strong> track invoice amounts against POs — that responsibility sits with our team. Per Kunal's recommendation:</p>
+<ul>
+    <li>Maintain an internal expense tracker (e.g., an Excel sheet) that records invoice amounts, dates, and the PO each invoice draws against.</li>
+    <li>Reconcile the tracker against the PO balance regularly so contractors and directors have an accurate picture of remaining funds.</li>
+</ul>
+<h3>4. Contractor Travel Expenses</h3>
+<ul>
+    <li>Contractor travel is <strong>not supported</strong> by the Emburse app.</li>
+    <li>Anticipated contractor travel must be included in the initial contract as part of the PO (for example, a $3,000 PO line item for Dylan's travel).</li>
+    <li>Travel that was not scoped into the original PO cannot be reimbursed through Emburse — plan for it up front.</li>
+</ul>
+<h3>5. PO Scope and Limits</h3>
+<ul>
+    <li>Contractors <strong>must not</strong> exceed a PO's limit without first consulting the Director or Assistant Director.</li>
+    <li>All PO work must remain within the scope of the initial proposal. Out-of-scope work requires director-level approval and, where appropriate, a new or amended PO.</li>
+</ul>
+<h3>6. TS Accounting Meetings</h3>
+<p>Going forward, TS Accounting will not hold meetings without Jemma's presence. Schedule TS Accounting meetings only when Jemma is available to attend.</p>
+<h3>7. Success and Failure Verification</h3>
+<p><strong>Success:</strong> Jemma and Blake are cc'd on every PO TDX request; invoice amounts are tracked internally and reconciled against PO balances; contractor travel is scoped into POs up front; contractors stay within PO limits and proposal scope; and TS Accounting meetings only occur with Jemma present.</p>
+<p><strong>Failure:</strong> PO TDX requests are filed without cc'ing the Director and Assistant Director; invoices go untracked internally; contractor travel is incurred outside the PO; contractors exceed PO limits or perform out-of-scope work without director approval; or a TS Accounting meeting is held without Jemma.</p>
+<p><strong>Failure Examples:</strong> A TDX ticket about a PO is opened without Jemma or Blake on the cc line; a contractor submits travel expenses to Emburse that were never scoped into the PO; a contractor invoices past the PO limit without prior consultation; TS Accounting holds a working session while Jemma is unavailable.</p>
+<h3>8. SOP Update Process</h3>
+<p>In the case of a required update to this SOP, the following process is followed:</p>
+<ol>
+    <li><strong>Call a meeting</strong> with those affected by the change — at minimum the Director and Assistant Director, and anyone who raised concerns leading to the update.</li>
+    <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
+    <li><strong>Note the effective date</strong> on the updated SOP.</li>
+    <li><strong>Proceed</strong> with operations under the new procedures.</li>
 </ol>
         `
     },
