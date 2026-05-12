@@ -744,27 +744,37 @@ th.header-highlight {
 
 /* SOP Modal */
 .sop-modal {
+  position: fixed;
+  inset: 0;
   margin: auto;
   padding: 0;
   border: none;
   border-radius: 12px;
   width: 90%;
   max-width: 800px;
-  max-height: 90vh;
+  max-height: 90dvh;
   background: var(--bg);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .sop-modal::backdrop {
   background: rgba(15, 23, 42, 0.6);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+}
+
+/* Prevent body scroll while modal is open (iOS Safari) */
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 .modal-content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-height: 90vh;
+  max-height: 90dvh;
   /* Ensuring content doesn't overflow the modal */
 }
 

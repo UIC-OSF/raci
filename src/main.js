@@ -322,12 +322,14 @@ function attachSOPListeners() {
 }
 
 let lastFocusedElement = null;
+let savedScrollY = 0;
 
 window.openSOPModal = function (sopId) {
   const sop = sops.find(s => s.id === sopId);
   if (!sop) return;
 
   lastFocusedElement = document.activeElement;
+  savedScrollY = window.scrollY;
 
   const modal = document.getElementById('sop-modal');
   const titleEl = document.getElementById('sop-modal-title');
@@ -352,6 +354,9 @@ window.openSOPModal = function (sopId) {
   // Make the body focusable for scrolling
   bodyEl.setAttribute('tabindex', '0');
 
+  document.body.style.top = `-${savedScrollY}px`;
+  document.body.classList.add('modal-open');
+
   modal.showModal();
   updateUrl(sopId);
 
@@ -368,6 +373,9 @@ window.openSOPModal = function (sopId) {
 
 // Handle dialog close (either by click, JS, or Escape key)
 document.getElementById('sop-modal').addEventListener('close', () => {
+  document.body.classList.remove('modal-open');
+  document.body.style.top = '';
+  window.scrollTo(0, savedScrollY);
   updateUrl();
   if (lastFocusedElement) {
     lastFocusedElement.focus();
