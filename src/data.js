@@ -222,18 +222,25 @@ export const sops = [
     <li>The Responsible person <strong>presents</strong> updates and <strong>solicits feedback</strong> from Consulted parties during the regular update meeting.</li>
     <li>Informed parties <strong>receive update reports</strong> from the Responsible person at the regularity stipulated in the area's SOP.</li>
 </ol>
-<h3>5. Success and Failure Verification</h3>
-<p><strong>Success:</strong> Each area has a clear owner; communication and updates happen on the cadence agreed in the area's SOP; concerns are raised through the right channel (Consulted parties, regular meetings) rather than escalating around them.</p>
-<p><strong>Failure:</strong> Ownership is unclear or contested, communication is reactive instead of scheduled, agreed cadences are skipped without rescheduling, or parties who are neither Responsible nor Accountable for an area direct its work.</p>
-<p><strong>Failure Examples:</strong> Additional meetings or communication required by parties who are neither Responsible nor Accountable for the specific area; an area's regular review is missed without rescheduling; decisions about an area are made without consulting its Responsible owner.</p>
-<h3>6. Remediation</h3>
+<h3>5. Director Inclusion and Non-Supervisor Requests</h3>
+<p>The Director (Jemma) is the team's supervisor. Requests for DAE team work that come from anyone outside the team's reporting line must be surfaced to the Director, and the Director must remain on any communication thread about DAE work even when she is not originally cc'd.</p>
+<ul>
+    <li><strong>Non-supervisor requests:</strong> Only the Director directs DAE team members' work. When someone outside the team asks a team member for help, the team member must inform the Director before committing — requests from non-supervisors can serve the requester's priorities rather than the team's, and the Director needs visibility to weigh the ask against team priorities.</li>
+    <li><strong>Add the Director back into the thread:</strong> If a team member receives an email, ticket, or message about DAE work that does not include the Director, the team member adds her to the conversation (e.g., cc's her on the reply). This applies even when the sender appears to have excluded the Director deliberately.</li>
+    <li><strong>Add other DAE leaders back when excluded:</strong> The same principle applies to other DAE leaders. If a communication about DAE work reaches a team member but excludes a DAE leader who should be on it (e.g., the Director was left off, the Assistant Director was left off), the team member cc's the missing leader in on the reply.</li>
+</ul>
+<h3>6. Success and Failure Verification</h3>
+<p><strong>Success:</strong> Each area has a clear owner; communication and updates happen on the cadence agreed in the area's SOP; concerns are raised through the right channel (Consulted parties, regular meetings) rather than escalating around them; the Director is informed of all external work requests and is cc'd on every communication thread about DAE work.</p>
+<p><strong>Failure:</strong> Ownership is unclear or contested, communication is reactive instead of scheduled, agreed cadences are skipped without rescheduling, parties who are neither Responsible nor Accountable for an area direct its work, or the Director is left out of communications about DAE work.</p>
+<p><strong>Failure Examples:</strong> Additional meetings or communication required by parties who are neither Responsible nor Accountable for the specific area; an area's regular review is missed without rescheduling; decisions about an area are made without consulting its Responsible owner; a team member takes on work for a non-supervisor without informing the Director; a team member replies to a DAE-related email without adding the Director back to the thread when she was missing.</p>
+<h3>7. Remediation</h3>
 <p>When failure occurs, the team works down this sequential list:</p>
 <ol>
     <li>Address the underlying system or process that caused the failure.</li>
     <li>Increase consultation meeting regularity for the impacted area.</li>
     <li>Update RACI items to restore clarity and alignment. This is the final step in remediation and should be avoided where possible, since stable RACI assignments support stable operations.</li>
 </ol>
-<h3>7. Procedure Flow Diagram</h3>
+<h3>8. Procedure Flow Diagram</h3>
 <pre class="mermaid">
 graph TD
     Start((Operational Start)) --> Process[Continuous Collaboration<br/>R & A Parties]
@@ -252,7 +259,7 @@ graph TD
     Success --> Start
     Remediation3 --> Start
 </pre>
-<h3>8. RACI and SOP Update Process</h3>
+<h3>9. RACI and SOP Update Process</h3>
 <p>When a new area is introduced or an existing RACI/SOP needs to change, the following process is followed:</p>
 <ol>
     <li><strong>Call a meeting</strong> with those affected by the change and anyone who raised concerns leading to the update.</li>
