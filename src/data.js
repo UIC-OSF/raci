@@ -51,6 +51,20 @@ export const areas = [
         i: ['michelle', 'amanda', 'trey', 'ck', 'chris', 'brother_j', 'asya']
     },
     {
+        id: 'dase_hub',
+        label: 'DASE Hub',
+        project: 'dae',
+        hideProject: true,
+        objective: 'Develop, maintain, and innovate the central data dashboard for DASE team projects.',
+        meetingRegularity: 'As needed',
+        informedRegularity: 'On updates',
+        effectiveDate: 'May 18, 2026',
+        r: ['chris'],
+        a: ['gemma'],
+        c: ['blake'],
+        i: ['helen', 'trey']
+    },
+    {
         id: 'support',
         label: 'Support',
         project: 'equalify',
