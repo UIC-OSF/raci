@@ -118,19 +118,6 @@ export const areas = [
     },
 
     {
-        id: 'accessibility',
-        label: 'Accessibility',
-        project: 'equalify',
-        objective: 'Enforce and validate rigorous accessibility standards across all Equalify products to ensure an inclusive user experience.',
-        meetingRegularity: 'Monthly (1st Tue)',
-        informedRegularity: 'On updates',
-        effectiveDate: 'TBD',
-        r: ['ck'],
-        a: ['chris'],
-        c: ['brother_j', 'trey'],
-        i: ['blake', 'gemma']
-    },
-    {
         id: 'user_testing_extension',
         label: 'User Testing Extension',
         project: 'equalify',
