@@ -56,12 +56,12 @@ export const areas = [
         project: 'dae',
         hideProject: true,
         objective: 'Develop, maintain, and innovate the central data dashboard for DASE team projects.',
-        meetingRegularity: 'Weekly',
+        meetingRegularity: 'Weekly (buildout), then monthly',
         informedRegularity: 'On updates',
         effectiveDate: 'May 18, 2026',
         r: ['chris'],
-        a: ['gemma'],
-        c: ['blake', 'stefin'],
+        a: ['blake'],
+        c: ['gemma', 'stefin'],
         i: ['helen', 'trey']
     },
     {
@@ -665,9 +665,9 @@ graph TD
         project: 'dae',
         area: 'dase_hub',
         responsible: 'chris',
-        accountable: 'gemma',
+        accountable: 'blake',
         effectiveDate: 'June 9, 2026',
-        reviewCadence: 'Weekly (team meeting)',
+        reviewCadence: 'Weekly (buildout), then monthly',
         reportRegularity: 'On updates',
         content: `
 <h3>1. Purpose &amp; Scope</h3>
@@ -675,8 +675,8 @@ graph TD
 <h3>2. Roles</h3>
 <ul>
     <li><strong>Responsible (Chris):</strong> builds and maintains the dashboard, triages requests, and maintains the roadmap.</li>
-    <li><strong>Accountable (Jemma):</strong> sets direction and priorities, and approves the roadmap.</li>
-    <li><strong>Consulted (Blake):</strong> advises on scope, priorities, and cross-project alignment.</li>
+    <li><strong>Accountable (Blake):</strong> sets direction and priorities, and approves the roadmap.</li>
+    <li><strong>Consulted (Jemma, Stefin):</strong> Jemma advises on scope, priorities, and direction; Stefin coordinates how check-ins fit the team's meeting cadence.</li>
     <li><strong>Informed (Helen, Trey):</strong> kept up to date on progress and releases.</li>
 </ul>
 <h3>3. Intake &amp; Request Management</h3>
@@ -687,16 +687,16 @@ graph TD
     <li><strong>Each request captures:</strong> what is needed, which DASE project or data it concerns, who it's for, and desired timing.</li>
 </ul>
 <h3>4. Cadence &amp; Communication</h3>
-<h4>4.1. Weekly Check-in</h4>
+<h4>4.1. Check-in Cadence</h4>
 <ul>
-    <li><strong>Frequency:</strong> Weekly, as a standing item in the team's weekly meeting.</li>
-    <li><strong>Participants:</strong> Chris, Jemma, Blake.</li>
-    <li><strong>Objective:</strong> Review new requests, confirm the week's priorities against the roadmap, and surface blockers.</li>
-    <li><strong>Meeting coordination:</strong> Stefin determines how this check-in — alongside check-ins for other DASE/OSF projects — is worked into the team's weekly meetings, as part of his cross-project Project Management role.</li>
+    <li><strong>Frequency:</strong> <strong>Weekly</strong> during the active buildout stage, shifting to <strong>monthly</strong> once the dashboard reaches steady-state maintenance. Held as a standing item in the team meeting.</li>
+    <li><strong>Participants:</strong> Chris, Blake, Jemma.</li>
+    <li><strong>Objective:</strong> Review new requests, confirm priorities against the roadmap, and surface blockers.</li>
+    <li><strong>Meeting coordination:</strong> Stefin determines how this check-in — alongside check-ins for other DASE/OSF projects — is worked into the team's meetings, as part of his cross-project Project Management role.</li>
 </ul>
 <h4>4.2. Prioritization</h4>
 <ul>
-    <li>Priorities are set against the roadmap by Jemma (Accountable), with Chris sizing the work and Blake consulted on trade-offs.</li>
+    <li>Priorities are set against the roadmap by Blake (Accountable), with Chris sizing the work and Jemma consulted on trade-offs.</li>
     <li>New requests are slotted into the roadmap rather than actioned immediately, unless flagged urgent.</li>
 </ul>
 <h4>4.3. Updates</h4>
@@ -704,7 +704,7 @@ graph TD
     <li>Chris posts a short progress update to Informed stakeholders (Helen, Trey) on each meaningful update or release.</li>
 </ul>
 <h3>5. Development Roadmap &amp; Milestones</h3>
-<p>The roadmap is reviewed in the weekly check-in and may shift as priorities change. Current phases:</p>
+<p>The roadmap is reviewed at each check-in and may shift as priorities change. The buildout phases below correspond to the weekly-cadence stage; once they are complete and the dashboard is in steady-state maintenance, check-ins move to monthly. Current phases:</p>
 <h4>Phase 1: Foundation (Now)</h4>
 <ul>
     <li>Lock the dashboard's scope and the core set of DASE projects and metrics it surfaces.</li>
@@ -722,13 +722,13 @@ graph TD
     <li><em>[Stretch items — confirm]</em>.</li>
 </ul>
 <h3>6. Success and Failure Verification</h3>
-<p><strong>Success:</strong> Requests are logged in the single backlog and triaged; the weekly check-in occurs and sets priorities against the roadmap; Informed stakeholders receive updates; and dashboard work tracks the agreed roadmap.</p>
-<p><strong>Failure:</strong> Requests are actioned through scattered messages instead of the backlog; the weekly check-in is skipped without rescheduling; priorities are set ad hoc rather than against the roadmap; or Informed stakeholders are left without updates.</p>
-<p><strong>Failure Examples:</strong> A dashboard change is built directly from a one-off chat message with no tracked issue; a week passes with no check-in or reprioritization; the roadmap goes stale while new requests pile up unlogged.</p>
+<p><strong>Success:</strong> Requests are logged in the single backlog and triaged; the check-in occurs on its current cadence and sets priorities against the roadmap; Informed stakeholders receive updates; and dashboard work tracks the agreed roadmap.</p>
+<p><strong>Failure:</strong> Requests are actioned through scattered messages instead of the backlog; the check-in is skipped without rescheduling; priorities are set ad hoc rather than against the roadmap; or Informed stakeholders are left without updates.</p>
+<p><strong>Failure Examples:</strong> A dashboard change is built directly from a one-off chat message with no tracked issue; a scheduled check-in is missed with no reprioritization; the roadmap goes stale while new requests pile up unlogged.</p>
 <h3>7. SOP Update Process</h3>
 <p>In the case of a required update to this SOP, the following process is followed:</p>
 <ol>
-    <li><strong>Call a meeting</strong> with those affected by the change — at minimum Chris and Jemma, and anyone who raised concerns leading to the update.</li>
+    <li><strong>Call a meeting</strong> with those affected by the change — at minimum Chris and Blake, and anyone who raised concerns leading to the update.</li>
     <li><strong>Agree on updates</strong> collaboratively during the meeting.</li>
     <li><strong>Note the effective date</strong> on the updated SOP.</li>
     <li><strong>Proceed</strong> with operations under the new procedures.</li>
