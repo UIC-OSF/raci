@@ -676,8 +676,8 @@ graph TD
 <ul>
     <li><strong>Responsible (Chris):</strong> builds and maintains the dashboard, triages requests, and maintains the roadmap.</li>
     <li><strong>Accountable (Blake):</strong> sets direction and priorities, and approves the roadmap.</li>
-    <li><strong>Consulted (Jemma, Stefin):</strong> Jemma advises on scope, priorities, and direction; Stefin coordinates how check-ins fit the team's meeting cadence.</li>
-    <li><strong>Informed (Helen, Trey):</strong> kept up to date on progress and releases.</li>
+    <li><strong>Consulted (Jemma):</strong> advises on scope, priorities, and direction; approves the roadmap.</li>
+    <li><strong>Informed (Stefin, Helen, Trey):</strong> kept up to date on progress and releases.</li>
 </ul>
 <h3>3. Intake &amp; Request Management</h3>
 <p>To keep requests from scattering across chats and messages, all DASE Hub requests follow a single intake path:</p>
@@ -707,9 +707,10 @@ graph TD
 <p>The roadmap is reviewed at each check-in and may shift as priorities change. The buildout phases below correspond to the weekly-cadence stage; once they are complete and the dashboard is in steady-state maintenance, check-ins move to monthly. Current phases:</p>
 <h4>Phase 1: Foundation (Now)</h4>
 <ul>
+    <li>Replace the existing dashboard (<a href="https://a11ydoer.github.io/uic/key-results.html" target="_blank">https://a11ydoer.github.io/uic/key-results.html</a>) with the new DASE Hub dashboard.</li>
     <li>Lock the dashboard's scope and the core set of DASE projects and metrics it surfaces.</li>
     <li>Triage the existing request backlog and convert outstanding messages into tracked issues.</li>
-    <li>Ship the core dashboard view: <em>[top-priority metrics — confirm]</em>.</li>
+    <li>Ship the core dashboard view with feature parity to the existing dashboard.</li>
 </ul>
 <h4>Phase 2: Coverage (Next)</h4>
 <ul>
