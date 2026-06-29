@@ -3,7 +3,6 @@ export const people = [
     { id: 'gemma', name: 'Jemma' },
     { id: 'stefin', name: 'Stefin' },
     { id: 'trey', name: 'Trey' },
-    { id: 'amanda', name: 'Amanda' },
     { id: 'chris', name: 'Chris' },
     { id: 'brother_j', name: 'Brother J' },
     { id: 'ck', name: 'CK' },
@@ -35,7 +34,7 @@ export const areas = [
         r: ['blake'],
         a: ['gemma'],
         c: ['trey', 'chris', 'stefin', 'helen'],
-        i: ['amanda', 'brother_j', 'ck', 'michelle', 'asya', 'dylan']
+        i: ['brother_j', 'ck', 'michelle', 'asya', 'dylan']
     },
     {
         id: 'dae_osf_project_management',
@@ -48,7 +47,7 @@ export const areas = [
         r: ['stefin'],
         a: ['blake'],
         c: ['gemma'],
-        i: ['michelle', 'amanda', 'trey', 'ck', 'chris', 'brother_j', 'asya']
+        i: ['michelle', 'trey', 'ck', 'chris', 'brother_j', 'asya']
     },
     {
         id: 'dase_hub',
@@ -74,7 +73,7 @@ export const areas = [
         effectiveDate: 'TBD',
         r: ['blake'],
         a: ['gemma'],
-        c: ['amanda', 'helen', 'trey', 'chris'],
+        c: ['helen', 'trey', 'chris'],
         i: []
     },
     {
@@ -87,7 +86,7 @@ export const areas = [
         effectiveDate: 'March 26, 2026',
         r: ['chris'],
         a: ['blake'],
-        c: ['trey', 'amanda'],
+        c: ['trey'],
         i: ['gemma']
     },
     {
@@ -101,7 +100,7 @@ export const areas = [
         r: ['dylan'],
         a: ['blake'],
         c: ['gemma'],
-        i: ['chris', 'trey', 'ck', 'amanda']
+        i: ['chris', 'trey', 'ck']
     },
     {
         id: 'dashboard_product',
@@ -130,7 +129,7 @@ export const areas = [
         r: ['ck', 'brother_j'],
         a: ['chris'],
         c: ['blake'],
-        i: ['trey', 'gemma', 'amanda', 'lucy']
+        i: ['trey', 'gemma', 'lucy']
     },
 
     {
@@ -329,41 +328,90 @@ graph TD
         area: 'user_testing_extension',
         responsible: 'ck',
         accountable: 'chris',
-        effectiveDate: 'March 18, 2026',
+        effectiveDate: 'June 29, 2026',
         reviewCadence: 'Weekly (Tue and Thu)',
         reportRegularity: 'Monthly (Third Tuesday)',
         content: `
 <h3>1. Purpose</h3>
 <p>This document outlines the standard operating procedures, communication protocols, and the development timeline for the User Testing Extension. It serves to align the engineering team on feature planning, UI considerations, and implementation milestones.</p>
 <h3>2. Team Communication & Cadence</h3>
-<p>Continuous and structured communication is critical to maintaining momentum and addressing technical constraints.</p>
-<h4>2.1. Design Meetings</h4>
+<p>Communication is asynchronous and coordinated through Microsoft Teams and GitHub issues.</p>
+<h4>2.1. Microsoft Teams Channel</h4>
 <ul>
-    <li><strong>Frequency:</strong> Weekly (Tue and Thu)</li>
-    <li><strong>Participants:</strong> CK, Brother J, Lucy (optional)</li>
-    <li><strong>Objective:</strong> Plan upcoming features, refine user flows, and discuss User Interface (UI) considerations.</li>
+    <li><strong>Channel:</strong> Dedicated User Testing Extension development channel</li>
+    <li><strong>Membership:</strong> All stakeholders who are Responsible, Accountable, Consulted, or Informed (RACI) must be members of the Microsoft Teams channel</li>
+    <li><strong>Purpose:</strong> Central hub for asynchronous communication, updates, and planning discussions</li>
 </ul>
-<h4>2.2. Development Meetings</h4>
+<h4>2.2. Tuesday Check-in</h4>
 <ul>
-    <li><strong>Frequency:</strong> Weekly (Mon and Fri)</li>
-    <li><strong>Participants:</strong> CK, Brother J, CA, Lucy (optional)</li>
-    <li><strong>Objective:</strong> Discuss feature implementation, troubleshoot technical constraints, and forecast further development phases.</li>
+    <li><strong>Frequency:</strong> Every Tuesday</li>
+    <li><strong>Coordinator:</strong> CK initiates</li>
+    <li><strong>Process:</strong>
+        <ul>
+            <li>CK creates a GitHub issue in the Extension repository with a tick list of tasks people should be working on during the week</li>
+            <li>CK posts the GitHub issue link in the Microsoft Teams channel</li>
+            <li>CK asks: "Any updates on current progress?"</li>
+        </ul>
+    </li>
+    <li><strong>Team Response:</strong> Team members respond asynchronously in the Teams channel thread with progress updates</li>
 </ul>
-<h4>2.3. Consulted Monthly Reviews</h4>
+<h4>2.3. Thursday Planning Check-in</h4>
+<ul>
+    <li><strong>Frequency:</strong> Every Thursday</li>
+    <li><strong>Coordinator:</strong> CK initiates</li>
+    <li><strong>Process:</strong>
+        <ul>
+            <li>CK posts in the Microsoft Teams channel asking:
+                <ul>
+                    <li>"What should be on next week's tick list?"</li>
+                    <li>"What items can be eliminated from the current list?"</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong>Team Response:</strong> Team members respond asynchronously with:
+        <ul>
+            <li>New tasks to add for the following week</li>
+            <li>Completed items to remove</li>
+            <li>Items that should be deprioritized or eliminated</li>
+        </ul>
+    </li>
+</ul>
+<h4>2.4. GitHub Issue Format</h4>
+<ul>
+    <li><strong>Title Format:</strong> <code>Week of [Date]: Extension Development Tasks</code></li>
+    <li><strong>Body:</strong> Must include:
+        <ul>
+            <li>In Progress tasks with checkboxes and assigned team members</li>
+            <li>Planned tasks with checkboxes</li>
+            <li>Blocked/Questions section for items with blockers</li>
+            <li>Links to Teams threads for Tuesday Update and Thursday Planning</li>
+        </ul>
+    </li>
+    <li><strong>Management:</strong> Keep one issue per week; close previous week's issue when creating a new one</li>
+</ul>
+<h4>2.5. Consulted Monthly Reviews</h4>
 <ul>
     <li><strong>Frequency:</strong> Monthly (Third Tuesday)</li>
     <li><strong>Participants:</strong> Blake, CK, Brother J</li>
-    <li><strong>Objective:</strong> Provide updates to Consulted members to gather insight, clear roadblocks, and validate features against overarching accessibility goals.</li>
+    <li><strong>Objective:</strong> Provide updates to Consulted members to gather insight, clear roadblocks, and validate features against overarching accessibility goals</li>
 </ul>
-<h4>2.4. Informed Project Updates</h4>
+<h4>2.6. Informed Project Updates</h4>
 <ul>
     <li><strong>Frequency:</strong> Monthly (2nd Mon)</li>
     <li><strong>Participants:</strong> DASE Team</li>
-    <li><strong>Objective:</strong> Notify Informed stakeholders of overall project trajectory and key developments during the scheduled DASE monthly meeting.</li>
+    <li><strong>Objective:</strong> Notify Informed stakeholders of overall project trajectory and key developments during the scheduled DASE monthly meeting</li>
 </ul>
-<h4>2.5. Asynchronous Communication</h4>
+<h4>2.7. Escalation</h4>
 <ul>
-    <li>Responsible and Accountable Team members are expected to maintain ongoing asynchronous communication throughout the week to unblock team members, share progress, and ask questions outside of scheduled meetings.</li>
+    <li>If urgent issues arise between check-ins:
+        <ul>
+            <li>Post in the Teams channel immediately</li>
+            <li>Tag relevant team members</li>
+            <li>If time-sensitive, follow up with direct message</li>
+            <li>Document resolution in the current week's GitHub issue</li>
+        </ul>
+    </li>
 </ul>
 <h3>3. Development Roadmap & Milestones</h3>
 <h4>Phase 1: Foundational Prototype (Target: Late March)</h4>
@@ -468,7 +516,7 @@ graph TD
     <li>Upon approval, publish the update so that it is immediately available to the chat bot and the round-robin support staff.</li>
 </ol>
 <h3>6. Support Systems Buildout</h3>
-<p>As the support infrastructure and procedures scale, <strong>Blake</strong> is responsible for the overarching buildout and configuration of the support systems. <strong>Amanda</strong> will assist in supporting this buildout process.</p>
+<p>As the support infrastructure and procedures scale, <strong>Blake</strong> is responsible for the overarching buildout and configuration of the support systems.</p>
         `
     },
     {
@@ -541,7 +589,7 @@ graph TD
 <h4>2.1. Triage Sessions</h4>
 <ul>
     <li><strong>Frequency:</strong> Monthly (Third Wednesday at 10:00 CST)</li>
-    <li><strong>Participants:</strong> Chris, Blake, Amanda, Trey</li>
+    <li><strong>Participants:</strong> Chris, Blake, Trey</li>
     <li><strong>Objective:</strong> Review all new/unlabeled issues, apply labels, set priority.</li>
 </ul>
 <h4>2.2. Asynchronous Monitoring</h4>
